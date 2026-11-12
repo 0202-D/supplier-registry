@@ -31,7 +31,7 @@ suppliers:
   file: ./suppliers.json
 ```
 
-Пример `suppliers.json`:
+Пример `supplier-registry/suppliers.json`:
 
 ```json
 [
