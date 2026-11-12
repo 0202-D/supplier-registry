@@ -20,7 +20,10 @@ public class SupplierFileLoader {
         try {
             return objectMapper.readValue(path.toFile(), new TypeReference<>() {});
         } catch (IOException exception) {
-            throw new IllegalStateException("Failed to load suppliers from: " + path, exception);
+            throw new IllegalStateException(
+                    "Failed to load suppliers from: " + path.toAbsolutePath(),
+                    exception
+            );
         }
     }
 }
